@@ -124,7 +124,7 @@ Date:
 
 
 @code{
-    IndexViewModel person = null;
+    Person person = null;
     int selectedGroup = 1;
     int selectedLocationId = 0;
 
@@ -134,7 +134,7 @@ Date:
     protected override void OnInitialized()
     {
         base.OnInitialized();
-        person = new IndexViewModel
+        person = new Person
         {
                 SalesPerson = "bent",
                 Amount = 15000,
@@ -148,7 +148,7 @@ Date:
     #region "View Model"
 
 
-    class IndexViewModel
+    class Person
     {
         public string? SalesPerson { get; set; }
         public double Amount { get; set; }
